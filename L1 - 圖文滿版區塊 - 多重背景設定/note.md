@@ -10,7 +10,7 @@ background: \
 
 RWD 大小
   width: 100%;\
-  max-width: 1200px;\
+  max-width: 1200px;
 
 flex
   display: flex;\
@@ -18,4 +18,4 @@ flex
   justify-content: center;\
   align-items: start;\
   // 主軸與次軸交換  預設情況下  次軸會自動填滿主軸的寬高\
-  // 所以要用  align-items: start;  讓他不填滿\
+  // 所以要用  align-items: start;  讓他不填滿
