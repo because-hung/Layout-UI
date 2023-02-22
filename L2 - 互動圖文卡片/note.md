@@ -12,7 +12,7 @@ position: absolute;\
   top: 0;\
   right: 0;\
   bottom: 0;\
-  left: 0; // 沒有寬高 自然拉伸填滿父元素\
+  left: 0; // 沒有寬高 自然拉伸填滿父元素
 
 transition 運用
 
