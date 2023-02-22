@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item {
+  width: 25%;
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.item .txt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.item .txt h2 {
+  font-size: 32px;
+  color: yellow;
+  font-weight: 500;
+}
+
+.item .txt h2:after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: 10px 0;
+  background-color: #FF0;
+  -webkit-transition: width .5s .3s;
+  transition: width .5s .3s;
+}
+
+.item .txt p {
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+}
+
+.item:hover .txt {
+  opacity: 1;
+}
+
+.item:hover h2::after {
+  width: 100%;
+}
+/*# sourceMappingURL=L2.css.map */
