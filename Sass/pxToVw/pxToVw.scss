@@ -1,0 +1,12 @@
+/*rx: 需求 60px 解析度 1440px -> 60*100 / 1440px (vw)*/
+@function pxToVw($px) {
+    @return $px * 100 / 1440 + vw;
+}
+
+/* 測試 pxToVw($px) */
+.box{
+    width: pxToVw(200);
+    height: pxToVw(200);
+    border: pxToVw(1) solid black;
+    font-size: pxToVw(40);
+}

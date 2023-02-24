@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.footer {
+  background: #333;
+  color: #aaa;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.item-group {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.title {
+  margin: 0 0px 20px;
+  padding: 30px 10px;
+  background: #ccc;
+}
+
+.title h2 {
+  text-align: center;
+  font-size: 46px;
+}
+
+.title p {
+  font-size: 22px;
+  text-align: center;
+}
+
+.item {
+  margin: 0 10px 40px;
+}
+
+.item h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.item p {
+  text-align: center;
+}
+
+.item .pic img {
+  width: 100%;
+}
+
+.service {
+  margin: 60px 0;
+  background: #ffa;
+}
+
+.service .item {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .item-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .service .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .service .item .pic, .service .item .txt {
+    width: 50%;
+    margin: 0;
+  }
+  .service .item .txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+/*# sourceMappingURL=L2.css.map */

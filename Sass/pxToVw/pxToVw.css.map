@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,uDAAuD;AAKvD,sBAAsB;AACtB,AAAA,IAAI,CAAA;EACA,KAAK,EALG,UAAqB;EAM7B,MAAM,EANE,UAAqB;EAO7B,MAAM,EAPE,SAAqB,CAOX,KAAK,CAAC,KAAK;EAC7B,SAAS,EARD,SAAqB;CAShC",
+    "sources": [
+        "pxToVw.scss"
+    ],
+    "names": [],
+    "file": "pxToVw.css"
+}
