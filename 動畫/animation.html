@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+</head>
+  <style type="text/css">
+    .box{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: red;
+      /* 在哪裡.什麼角色上執行 - 選角 */
+      /* animation: 動畫名稱 播放時間 延遲執行時間 速度 次數 方向 填充模式 播放狀態; */
+      animation: bubble .5s infinite alternate;
+    }
+    @keyframes bubble {  /* 動畫執行的內容 - 劇本 */
+      0%{
+        border-radius: 50%;
+      }
+      100%{
+        border-radius: 0%;
+      }   
+    }
+  </style>
+<body>
+  <div class="box"></div>
+</body>
+
+</html>

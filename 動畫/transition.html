@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition</title>
+  <style type="text/css">
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: black;
+      text-decoration: none;
+      color: white;
+      /* transition: 屬性 轉換時間 延遲執行時間 速度; */
+      /* transition: background-color .5s 0s ease; */
+      /* 可以 一組一組 設定執行 */
+      transition: padding .5s 0s ease, background-color 0.5s 0.5s ease;
+    }
+    .btn:hover{
+      background-color: red;
+      color: green;
+      padding: 10px 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#" class="btn">enter me</a>
+</body>
+
+</html>
