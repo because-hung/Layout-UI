@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  padding: 100px 0;
+  // 不要讓色彩或圖片隨畫面捲動 就可以用 fixed 固定
+  background: linear-gradient(20deg, #3d5493, #1aa2a0) fixed center center / 100% 100%;
+}
+
+.wrap {
+  width: 1200px;
+  margin: auto;
+
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+    .pic {
+      width: 55%;
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+
+    .txt {
+      width: 55%;
+      flex-shrink: 0;
+      padding: 50px 30px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+
+      h2 {
+        font-weight: 900;
+      }
+
+      p {
+        margin-top: 5px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .item > :first-child {
+    // > 只會選到 item 底下第一層的物件 (只選兒子不選孫子)
+    // 如果沒有 > 就會是底下通通都選
+    margin-right: -10%;
+  }
+
+  .item:nth-child(odd) {
+    .txt {
+      // 使用 VS Code 插件 color-conversion 把顏色改成RGBA 
+      background-color: rgba(240,174,193,.8);
+    }
+  }
+
+  .item:nth-child(even) {
+    .txt {
+      background-color: rgba(254,201,121,.8);
+    }
+  }
+}
