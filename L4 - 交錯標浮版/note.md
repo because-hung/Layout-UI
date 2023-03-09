@@ -13,9 +13,9 @@ img 圖片跟距離有空白\
 兩個重疊的div 後面會蓋掉前面的
 
 不要讓色彩或圖片隨畫面捲動 就可以用 fixed 固定\
-  background: linear-gradient(20deg, #3d5493, #1aa2a0) fixed\ center center / 100% 100%;
+  background: linear-gradient(20deg, #3d5493, #1aa2a0) fixed center center / 100% 100%;
 
-使用 VS Code 插件 color-conversion 把顏色改成RGBA\ 
+使用 VS Code 插件 color-conversion 把顏色改成RGBA
 
 .item > :first-child {\
   // > 只會選到 item 底下第一層的物件 (只選兒子不選孫子)\
