@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.wrap{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(-30deg,#fdaecb, #e7597f, #fe8556);
+}
+.container{
+  width: 1440px;
+  margin: auto;
+  display: flex;
+}
+.item{
+  width: 30%;
+  margin: 0 15px;
+  display: flex;
+  background: #fff;
+  border: 1px solid black;
+  // X軸 Y軸 模糊程度
+  // 做陰影的時候  加點背景色彩在陰影裡面  可以將色彩跟背景融合在一起  會更漂亮 
+  box-shadow: 0 10px 30px rgba(160, 0, 0, .5);
+  .pic{
+    width: 50%;
+    img{
+      width: 100%;
+      height: 100%;
+      // 可以讓你的圖片跟容器一樣大
+      object-fit: cover;
+    }
+  }
+  .txt{
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    // 拿掉jcc 排頭居中
+    // justify-content: center;
+    h2{
+      margin-bottom: .4em;
+      font-weight: 500;
+    }
+    p{
+      margin-bottom: .4em;
+      font-weight: 300;
+    }
+    .btn{
+      line-height: 1.5em;
+      border: 1px solid #ccc;
+      padding: 0 1em;
+      align-self: flex-end;
+      text-decoration: none;
+      border-radius: 200px;
+      // 按鈕居中
+      margin-top: auto;
+      color: #aaa;
+      &:hover{
+        background-color: #aaa;
+        color: #fff;
+      }
+    }
+  }
+}
