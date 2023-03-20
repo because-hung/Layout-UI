@@ -11,6 +11,7 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   padding: 20px;
   max-width: 1200px;
   align-items: center;
@@ -18,7 +19,7 @@
 }
 
 .main-header {
-  background: linear-gradient(0deg, #fe70d8, #3713c1);
+  background: linear-gradient(0deg, #cc4380, #fb6c75);
 
   .logo {
     width: 100px;
@@ -66,26 +67,4 @@
     }
   }
 
-  .header-search {
-    display: flex;
-
-    input,
-    button {
-      border: none;
-      background-color: #fff;
-      padding: 5px 10px;
-    }
-    input:focus,
-    button:focus {
-      outline: none;
-    }
-
-    button {
-      border-radius: 0 200px 200px 0;
-    }
-
-    input {
-      border-radius: 200px 0 0 200px;
-    }
-  }
 }
