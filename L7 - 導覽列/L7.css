@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:wght@300;700;900&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  max-width: 1200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.main-header {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fe70d8), to(#3713c1));
+  background: linear-gradient(0deg, #fe70d8, #3713c1);
+}
+
+.main-header .logo {
+  width: 100px;
+}
+
+.main-header .logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.main-header .main-nav {
+  margin: auto;
+}
+
+.main-header .main-nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 1em;
+  position: relative;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: inline-block;
+}
+
+.main-header .main-nav a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -5px;
+  height: 0;
+  border-bottom: 1px solid #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main-header .main-nav a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.main-header .main-nav a:hover::after {
+  left: 0;
+  right: 0;
+}
+
+.main-header .header-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header .header-search input,
+.main-header .header-search button {
+  border: none;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+
+.main-header .header-search input:focus,
+.main-header .header-search button:focus {
+  outline: none;
+}
+
+.main-header .header-search button {
+  border-radius: 0 200px 200px 0;
+}
+
+.main-header .header-search input {
+  border-radius: 200px 0 0 200px;
+}
+/*# sourceMappingURL=L7.css.map */
