@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body{
+background-color: #562870;
+}
+
+.wrap{
+  padding: 10px 0;
+  background-color: #ec008b;
+  box-shadow: 0px 5px 5px hsla(260, 100%, 20%, .5);
+}
+.breadcrumb{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  li{
+  padding: 0 20px;
+  }
+  // 選取器是 li + li ，意思就是要選到緊跟在 li 後面的 li，因為第一個 li 的前方沒有 li ，所以第一個 li 不會被選取到，後面的每個 li 的前方都有一個 li， 所以都會被選取到
+  li + li{
+    padding-left: 0;
+  }
+  li + li:before{
+    content: '>>';
+    color: #fff;
+    margin-right: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+  li:last-child a, a:hover{
+    color: #ff0;
+  }
+}
