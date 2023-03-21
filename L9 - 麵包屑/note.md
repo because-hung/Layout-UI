@@ -9,8 +9,8 @@ Css 選取器
 選擇「位在下一層”內”所有符合指定名字的元素」(所有所有符合指定名字的兒子，不會選到孫子輩)
 
 span\
-  div son</p> // green\
-  div son</p> // green\
+  div son // green\
+  div son // green\
   span\
     div grand son
 
