@@ -27,14 +27,14 @@ color: green;\
 
 選擇「位在同一層跟在後面的第一個元素」(選擇一個跟在後方的兄弟姊妹)
 
-<div>\
-  <span>span</span>\
-    <p>first p</p> // red\
-    <p>second p</p>\
+<div>
+  <span>span</span>
+    <p>first p</p> // red
+    <p>second p</p>
 </div>
 
-span + p {\
-  color: red;\
+span + p {
+  color: red;
 }
 
 最後呈現的結果：只有緊接在span後面的第一個ｐ被改成紅字。
@@ -43,10 +43,10 @@ span + p {\
 
 選擇「位在同一層的所有符合指定名字的元素」(選擇所有符合指定名字的兄弟姊妹)
 
-<div>\
-  <span>span</span>\
-    <p>first p</p> // red\
-    <p>second p</p> // red\
+<div>
+  <span>span</span>
+    <p>first p</p> // red
+    <p>second p</p> // red
 </div>
 
 span ~ p {\
