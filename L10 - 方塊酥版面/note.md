@@ -2,8 +2,10 @@
 
 ### 筆記 -
 
-// 讓父層能夠抓到所有子層的高度 類似clear消除float效果(在父層設定)\ 
- overflow: hidden;
+
+overflow: hidden;
+// 讓父層能夠抓到所有子層的高度 類似clear消除float效果(在父層設定)
+
 
 transition 放大互動效果 (scale)
 
