@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>側欄選單
+  </title>
+  <link rel="stylesheet" href="L3.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header"> <button id="btn">click</button><button id="btn2">close</button></div>
+    <div class="sidebar" id="sideMenu">
+      <span>登入/</span>
+      <span>登出</span>
+    </div>
+    <div class="content">
+      <p>認定生命，沒人承受遠程國家大聲很好關係版權戰士遠遠技巧打算一顆樣子，女士產品事務所需，也會合適看不到一臉電影微笑專區創意股東版本發貼，外資自主兩次報名房產適應選手的話位於影片平均研發，快車方向眼裡終。</p>
+    </div>
+  </div>
+  <script>
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", openlay, false);
+    let closelays = document.getElementById("btn2");
+    closelays.addEventListener("click", closelay, false);
+
+    function openlay() {
+      this.classList.toggle("change");
+      document.getElementById("sideMenu").style.transform = "translate(0px)";
+    }
+
+    function closelay() {
+      document.getElementById("sideMenu").style.transform = "translate(300px)";
+    }
+  </script>
+</body>
+
+</html>
