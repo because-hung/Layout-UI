@@ -25,7 +25,6 @@ body{
 }
 
 .sidebar{
-  width: 300px;
   height: 500px;
   background: lightcoral;
   display: flex;
@@ -33,6 +32,8 @@ body{
   justify-content: center;
   position: absolute;
   top: 30px;
+  left: 0;
   right: 0;
+  transition: .5s;
 }
 

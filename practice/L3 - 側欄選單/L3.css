@@ -35,7 +35,6 @@ body {
 }
 
 .sidebar {
-  width: 300px;
   height: 500px;
   background: lightcoral;
   display: -webkit-box;
@@ -49,10 +48,9 @@ body {
           justify-content: center;
   position: absolute;
   top: 30px;
+  left: 0;
   right: 0;
   -webkit-transition: .5s;
   transition: .5s;
-  -webkit-transform: translate(300px);
-          transform: translate(300px);
 }
 /*# sourceMappingURL=L3.css.map */
