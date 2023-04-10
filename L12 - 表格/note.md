@@ -2,11 +2,9 @@
 
 ### 筆記 -
 
-<table>\
+
 // caption 為表格標題 或 註解\
-<caption>CSS coke 範例一覽表</caption>\
-<thead>\
-// 可以擺上面或下面\
+caption 可以擺上面或下面\
 caption {\
   caption-side: bottom;\
 }
@@ -16,4 +14,4 @@ caption {\
 <td scope="row">1</td>
 
 表格佔5格\
-<td colspan="5">以上資料經同意轉貼</td>
+colspan="5"
