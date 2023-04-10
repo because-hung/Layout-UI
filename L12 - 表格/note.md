@@ -10,8 +10,8 @@ caption {\
 }
 
 把兩個 th 元素標識為列的表頭，把兩個 td 元素標識為行的表頭\
-scope="col">Month<
-scope="row">1<
+scope="col">Month<\
+scope="row">1<\
 
 表格佔5格\
 colspan="5"><
