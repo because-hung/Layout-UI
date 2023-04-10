@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:wght@300;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #546377;
+}
+
+.side-menu {
+  width: 300px;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#3381b0), to(#c2196c));
+  background-image: linear-gradient(0deg, #3381b0, #c2196c);
+  padding: 50px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 0 10px rgba(23, 23, 54, 0.6);
+          box-shadow: 5px 0 10px rgba(23, 23, 54, 0.6);
+}
+
+.side-menu form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px 50px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.side-menu form input, .side-menu form button {
+  border: none;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.side-menu form input {
+  width: 230px;
+}
+
+.side-menu form input::-webkit-input-placeholder {
+  /* CSS 3 標準 */
+  color: tomato;
+}
+
+.side-menu form input:-ms-input-placeholder {
+  /* CSS 3 標準 */
+  color: tomato;
+}
+
+.side-menu form input::-ms-input-placeholder {
+  /* CSS 3 標準 */
+  color: tomato;
+}
+
+.side-menu form input::placeholder {
+  /* CSS 3 標準 */
+  color: tomato;
+}
+
+.side-menu form button {
+  width: 50px;
+}
+
+.side-menu form input:focus, .side-menu form button:focus {
+  outline: none;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a .fa {
+  margin-right: -1.1em;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav a:hover .fa {
+  margin-right: 0em;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+nav a + a::before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  left: 10px;
+  right: 10px;
+  top: 0;
+}
+/*# sourceMappingURL=L13.css.map */
