@@ -11,7 +11,7 @@
   bottom: 0;\
   margin: auto;
 
-checkbox #sidebar-switch {\
+checkbox #sidebar-switch {
    * 設定絕對定位不佔空間
    * opacity 隱藏
    * z-index 讓層級往下放 避免點到
