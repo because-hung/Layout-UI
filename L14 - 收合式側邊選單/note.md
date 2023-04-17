@@ -14,7 +14,7 @@
 checkbox #sidebar-switch {
    * 設定絕對定位不佔空間
    * opacity 隱藏
-   * z-index 讓層級往下放 避免點到
+   * z-index 讓層級往下放 避免點到\
   position: absolute;\
   opacity: 0;\
   z-index: -1;\
