@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:wght@300;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #546377;
+}
+
+.side-menu {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#3381b0),
+    to(#c2196c)
+  );
+  background-image: linear-gradient(0deg, #3381b0, #c2196c);
+  padding: 50px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 5px 0 10px rgba(23, 23, 54, 0.6);
+  box-shadow: 5px 0 10px rgba(23, 23, 54, 0.6);
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.side-menu form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px 50px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.side-menu form input,
+.side-menu form button {
+  border: none;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.side-menu form input {
+  width: 230px;
+}
+
+.side-menu form input::-webkit-input-placeholder {
+  /* CSS 3 標準 */
+  color: tomato;
+}
+
+.side-menu form input:-ms-input-placeholder {
+  /* CSS 3 標準 */
+  color: tomato;
+}
+
+.side-menu form input::-ms-input-placeholder {
+  /* CSS 3 標準 */
+  color: tomato;
+}
+
+.side-menu form input::placeholder {
+  /* CSS 3 標準 */
+  color: tomato;
+}
+
+.side-menu form button {
+  width: 50px;
+}
+
+.side-menu form input:focus,
+.side-menu form button:focus {
+  outline: none;
+}
+
+.side-menu label {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background-color: #000;
+  color: #fff;
+  right: -40px;
+
+  /* top 0 bottom 0 margin: auto; 可以垂直居中 */
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 80px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+#sidebar-switch {
+  /* 
+   * 設定絕對定位不佔空間  
+   * opacity 隱藏 
+   * z-index 讓層級往下放 避免點到
+   */
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+#sidebar-switch:checked + .side-menu {
+  transform: translateX(0);
+}
+
+#sidebar-switch:checked + .side-menu label .btn-click {
+  /* scaleX(-1) 可以鏡像左右反轉 */
+  transform: scaleX(-1);
+
+  /*  方法2 也可以用 rotate */
+  /* transform: rotate(-180deg); */
+}
+
+.nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav a .fa {
+  margin-right: -1.1em;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* 同結構 用 element （父, 子, 孫） 同時操作 不用 class */
+.nav li:hover .fa {
+  margin-right: 0em;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* 保留父層 li 效果, > 選取單獨特定 a 而不是全選所有 a */
+.nav li:hover > a {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav li + li a::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  left: 10px;
+  right: 10px;
+  top: 0;
+}
+
+.nav ul {
+  display: none;
+  position: absolute;
+  top: 6px;
+  left: 100%;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 10px rgba(23, 23, 54, 0.6);
+}
+
+.nav li:hover > ul {
+  display: block;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L15 − 多層次收合式選單</title>
+    <link rel="stylesheet" href="L15.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <input type="checkbox" id="sidebar-switch" />
+    <div class="side-menu">
+      <form>
+        <input type="search" placeholder="請輸入關鍵字" />
+        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+      <!-- 結構 -> ul > li > a -->
+      <!-- 子, 孫結構 -> ul > li > a -->
+      <ul class="nav">
+        <li>
+          <a href="#">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            鐵人賽
+          </a>
+          <ul>
+            <li>
+              <a href="#">網頁設計入門</a>
+              <ul>
+                <li><a href="#">DAY1</a></li>
+                <li><a href="#">DAY2</a></li>
+                <li><a href="#">DAY3</a></li>
+                <li><a href="#">DAY4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">css 選取器</a>
+              <ul>
+                <li><a href="#">DAY1</a></li>
+                <li><a href="#">DAY2</a></li>
+                <li><a href="#">DAY3</a></li>
+                <li><a href="#">DAY4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">RWD 入門教學</a>
+              <ul>
+                <li><a href="#">DAY1</a></li>
+                <li><a href="#">DAY2</a></li>
+                <li><a href="#">DAY3</a></li>
+                <li><a href="#">DAY4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">物件垂直置中</a>
+              <ul>
+                <li><a href="#">DAY1</a></li>
+                <li><a href="#">DAY2</a></li>
+                <li><a href="#">DAY3</a></li>
+                <li><a href="#">DAY4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-gavel" aria-hidden="true"></i>
+            切版班
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-object-group" aria-hidden="true"></i>
+            RWD 教學
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            金魚網頁
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+            金魚切版
+          </a>
+        </li>
+      </ul>
+      <!-- for 對 input checkbox 控制的 id -->
+      <label for="sidebar-switch">
+        <i class="fa fa-angle-right btn-click" aria-hidden="true"></i>
+      </label>
+    </div>
+  </body>
+</html>
