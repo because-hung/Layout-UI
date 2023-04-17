@@ -3,7 +3,7 @@
 ### 筆記 -
 // for 對 input checkbox 控制的 id\
 // 可以實現點擊控制功能\
-  *input type="checkbox" id="sidebar-switch"*
+  *input type="checkbox" id="sidebar-switch"*\
   *label for="sidebar-switch"*
 
 // top 0  bottom 0  margin: auto; 可以垂直居中\
@@ -12,9 +12,9 @@
   margin: auto;
 
 checkbox #sidebar-switch {\
-   * 設定絕對定位不佔空間\ 
-   * opacity 隱藏\ 
-   * z-index 讓層級往下放 避免點到\
+   * 設定絕對定位不佔空間
+   * opacity 隱藏
+   * z-index 讓層級往下放 避免點到
   position: absolute;\
   opacity: 0;\
   z-index: -1;\
