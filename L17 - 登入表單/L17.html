@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>L17 - 登入表單</title>
+    <link rel="stylesheet" href="L17.css" />
+  </head>
+  <body>
+    <div class="login">
+      <form class="form">
+        <h2>會員登入</h2>
+        <div class="login-group">
+          <label for="user_id">帳號</label>
+          <!-- id 設置給 label 使用, 點擊 label 後 自動帶入 input 輸入 -->
+          <input type="text" id="user_id" />
+        </div>
+        <div class="login-group">
+          <label for="user_password">密碼</label>
+          <input type="text" id="user_password" />
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-login">登入</button>
+          <button class="btn btn-cancel">取消</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
