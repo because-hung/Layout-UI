@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #edece1;
+  }
+  
+  .wrap {
+    width: 100%;
+    margin: auto;
+    padding: 0 100px;
+  }
+  
+  h1 {
+    margin: 30px 0px 10px;
+  }
+  
+  .timeline {
+    padding: 100px 0 200px;
+    /* 把元素分兩邊 */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .timeline li {
+    position: relative;
+    width: 50%;
+    padding: 20px 0;
+  }
+  
+  .timeline li:nth-child(odd) {
+    padding-right: 100px;
+  }
+  
+  .timeline li:nth-child(even) {
+    padding-left: 100px;
+    transform: translateY(50%);
+  }
+  
+  /* 點和線 一些裝飾性的東西 就可以用偽類來做 before after */
+  
+  /* 畫中線 */
+  .timeline li:nth-child(odd)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 0;
+    height: 100%;
+    background-color: #888;
+    right: 0;
+    z-index: -1;
+  }
+  
+  /* .timeline li:last-child::after {
+    height: 50%;
+  } */
+  
+  /* 畫圓點點 */
+  .timeline li::before {
+    content: "";
+    position: absolute;
+  
+    /* top bottom margin 組合可以垂直居中 */
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #aaa;
+    z-index: 3;
+  }
+  
+  .timeline li:nth-child(odd)::before {
+    right: -10px;
+  }
+  
+  .timeline li:nth-child(even)::before {
+    left: -10px;
+  }
+  
+  .timeline a {
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #888;
+  }
+  
+  .timeline a:hover {
+    background-color: #6fa5f6;
+  }
+  
+  .timeline a:hover h2,
+  .timeline a:hover p {
+    color: #fff;
+  }
+  
+  .timeline a:hover h2 {
+    border-bottom: 1px solid #fff;
+  }
+  
+  .timeline h2 {
+    color: #333;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+  }
+  
+  /* 畫橫線 */
+  .timeline h2::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background-color: #aaa;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .timeline li:nth-child(odd) h2::after {
+    right: 0;
+  }
+  
+  .timeline li:nth-child(even) h2::after {
+    left: 0;
+  }
+  
+  .timeline p {
+    margin-top: 15px;
+    width: 100%;
+    color: #666;
+    font-weight: 100;
+  }
+  

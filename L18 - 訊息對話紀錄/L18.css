@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3effb;
+  }
+  
+  .dialog {
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px #3e92cc;
+    background-color: #f4f5f7;
+  }
+  
+  .user {
+    /* flex 的預設情況下 會讓你每個欄位都是等高的 */
+    /* start 讓他對齊頂端 */
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .local {
+    /* flex 的預設情況下是 start */
+    /* end 讓他對齊右邊 */
+    justify-content: flex-end;
+  }
+  
+  .user .avatar {
+    text-align: center;
+  
+    /* flex-shrink: 0 不被 flex 壓縮 */
+    /* flex-shrink: 1 預設為 １ 自動壓縮 */
+    /* flex-grow （伸展） 屬性功能相反 */
+    flex-shrink: 0;
+  }
+  
+  /* .user .pic {
+    /* border-radius: 50%;
+    overflow: hidden; 
+  } */
+  
+  .user .pic img {
+    width: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  .user .txt {
+    position: relative;
+    background-color: #aaa;
+    padding: 16px;
+    /* height: 50%; */
+    border-radius: 10px;
+  }
+  
+  .remote .txt {
+    margin-left: 20px;
+    margin-right: 80px;
+    background-color: #fff;
+    color: #a1b4c5;
+  }
+  
+  .local .txt {
+    margin-right: 20px;
+    margin-left: 80px;
+    order: -1;
+    background-color: #3e92cc;
+    color: #fff;
+  }
+  
+  .remote .txt::before,
+  .local .txt::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  
+  .remote .txt::before {
+    border-right: 10px solid #fff;
+    left: -10px;
+  }
+  .local .txt::before {
+    /* 三角形方向與 border 相反 */
+    border-left: 10px solid #3e92cc;
+    right: -10px;
+  }
+  
