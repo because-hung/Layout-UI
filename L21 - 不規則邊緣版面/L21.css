@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.banner {
+  height: 700px;
+  background: url("https://picsum.photos/1400/700?random=2") center top / cover;
+}
+
+.section {
+  position: relative;
+}
+
+.section .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.section .item {
+  width: 570px;
+  margin: 0 15px;
+}
+
+.section .item h2 {
+  margin-bottom: 1.5em;
+}
+
+.section .item p {
+  line-height: 1.7;
+  margin-bottom: 1.5em;
+}
+
+.section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  top: 0;
+  left: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+
+  /* 可以利用陰影屬性去複製元素 製造多重陰影 */
+  box-shadow: 180px 0 0 30px #fff, 330px 35px 0 20px #fff,
+    480px 10px 0 60px #fff, 680px 70px 0 60px #fff, 880px 0 0 90px #fff,
+    -180px 0 0 30px #fff, -330px 35px 0 20px #fff, -480px 10px 0 60px #fff,
+    -680px 70px 0 60px #fff, -880px 0 0 90px #fff, -1100px 50px 0 90px #fff,
+    100px 0 0 55px rgba(0, 0, 10, 0.5), 300px 10px 0 55px rgba(0, 0, 10, 0.5),
+    540px -40px 0 50px rgba(0, 0, 10, 0.5),
+    740px -30px 0 30px rgba(0, 0, 10, 0.5),
+    880px -100px 0 80px rgba(0, 0, 10, 0.5), 1000px 0 0 80px rgba(0, 0, 10, 0.5),
+    -60px 0 0 55px rgba(0, 0, 10, 0.5), -300px 10px 0 55px rgba(0, 0, 10, 0.5),
+    -540px -40px 0 50px rgba(0, 0, 10, 0.5),
+    -740px -30px 0 30px rgba(0, 0, 10, 0.5),
+    -880px -70px 0 80px rgba(0, 0, 10, 0.5),
+    -1200px 0 0 30px rgba(0, 0, 10, 0.5);
+}
+.section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+/* 網頁是有層次的 層的概念 用３Ｄ的概念去看 網頁不是只有２Ｄ 
+是有Ｚ軸 給你做堆疊 */
